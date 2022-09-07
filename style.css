@@ -1,0 +1,53 @@
+
+    
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+    font-size: 3em;
+    background-color: aqua;
+    padding: 20px;
+}
+
+
+
+.container {
+    flex: 1;
+    height: 80vh;
+    padding: 20px;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-areas: 
+    "A A A A   A H H C  C C C C"
+    "A A A A   A B B C  C C C C"
+    "A A A A   A B B C  C C C C"
+    "A A A A   A B B C  C C C C"
+    "A A A A   A J J C  C C C C";
+
+}
+
+#calculator {
+    grid-area: B;
+    display: grid;
+
+    
+}
+
+
+.footer {
+    text-align: center;
+    background: blueviolet;
+    padding: 20px;
+    align-items: flex-end;
+    color: white;
+}
