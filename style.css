@@ -1,4 +1,6 @@
-
+/* * {
+    border: 2px solid red;
+} */
     
 
 html {
@@ -59,7 +61,7 @@ body {
     align-self: center;
     border-radius: 5%;
     border: 2px solid grey;
-    background-color: rgba(140, 140, 100, 0.75);
+    background-color: rgba(212, 212, 164, 0.75);
 }
 
 #historyScreen {
@@ -69,6 +71,7 @@ body {
 
 #inputScreen {
     padding: 2%;
+    margin-top: 10px;
 }
 
 #buttonContainer {
@@ -78,7 +81,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     text-align: center;
-    background-color: azure;
+    background-color: lightgrey;
     border-bottom-left-radius: 0.7em;
     border-bottom-right-radius: 0.7em;
 }
@@ -94,6 +97,14 @@ body {
     justify-content: center;
     font-size: x-large;
     background-color: ivory;
+}
+
+.btn:hover {
+    background-color: rgb(240, 240, 226);
+}
+
+.btn:active {
+    transform: scale(0.98);
 }
 
 [data-button="clear"] {
